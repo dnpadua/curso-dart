@@ -1,4 +1,6 @@
 funcaoArrow() {
+  String caculoAreaCircular(double raio) => 'Area do circulo: ${3.14 * raio * raio}';
+
   double desconto(int faltas) => (faltas > 1)
       ? 0.8
       : (faltas == 1)
@@ -11,6 +13,8 @@ funcaoArrow() {
   }
 
   calcularSalario('Daniel Pádua', 900, 100, 2);
+
+  print(caculoAreaCircular(2));
 }
 
 void main() {
