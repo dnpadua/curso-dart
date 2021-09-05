@@ -1,7 +1,15 @@
 import 'dart:io';
 
 void main() {
-  var texto = stdin.readLineSync();
+  // Área da circunferência = PI * raio * raio
 
-  print('O valor digitado é: ' + texto!);
+  final PI = 3.1415;
+
+  stdout.write('Informe o raio: ');
+  final entradaDoUsuario = stdin.readLineSync();
+  final double raio = double.parse(entradaDoUsuario!);
+
+  var area = PI * raio * raio;
+
+  print('O valor digitado é: ' + area.toString());
 }
